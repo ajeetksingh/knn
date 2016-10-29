@@ -16,6 +16,7 @@ knn.fit(X_train, y_train)
 predicted = knn.predict(X_test)
 
 acc = accuracy_score(y_test, predicted)
-print acc
+print "Accuracy: " + str(acc)
 
 accr = knn.score(X_test, y_test)
+print "Scoring Accuracy: " + str(accr)
